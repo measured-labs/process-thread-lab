@@ -1,8 +1,8 @@
 # 프로세스와 스레드 종합 가이드
 
 ## 목차
-1. [프로세스와 스레드의 정의 및 어원](#1-프로세스와-스레드의-정의-및-어원)
-2. [프로세스와 스레드의 동작 방식](#2-프로세스와-스레드의-동작-방식)
+1. [프로세스와 스레드의 정의 및 어원](#1-프로세스의-이론적-기초)
+2. [프로세스와 스레드의 동작 방식](#5-프로세스와-스레드의-동작-방식)
 3. [다양한 관점에서 바라본 프로세스와 스레드](#3-다양한-관점에서-바라본-프로세스와-스레드)
 4. [컴파일 언어와 인터프리터 언어에서의 프로세스와 스레드](#4-컴파일-언어와-인터프리터-언어에서의-프로세스와-스레드)
 5. [Java(Spring)과 Python(FastAPI)에서의 프로세스와 스레드](#5-javaspring과-pythonfastapi에서의-프로세스와-스레드)
@@ -120,8 +120,8 @@
 - 같은 프로세스 내 스레드들은 메모리 공유로 빠른 통신 가능
 
 **출처**:
-- [Tanenbaum - Modern Operating Systems (PDF)](https://csc-knu.github.io/sys-prog/books/Andrew%20S.%20Tanenbaum%20-%20Modern%20Operating%20Systems.pdf)
-- [Silberschatz - Operating System Concepts (PDF)](https://drive.uqu.edu.sa/_/mskhayat/files/MySubjects/2017SS%20Operating%20Systems/Abraham%20Silberschatz-Operating%20System%20Concepts%20(9th,2012_12).pdf)
+- Andrew S. Tanenbaum, 『Modern Operating Systems』(서적)
+- Abraham Silberschatz 외, 『Operating System Concepts』 9판(서적)
 - [Difference between Process and Thread - GeeksforGeeks](https://www.geeksforgeeks.org/operating-systems/difference-between-process-and-thread/)
 
 ### 1.6 하드웨어 레벨에서의 프로세스와 스레드
@@ -602,7 +602,7 @@ Suspend Ready → Ready: 메모리 확보 (Resume)
 - **배리어**: 모든 스레드 동기화 지점
 
 **출처**:
-- [Operating System Concepts (Silberschatz) - PDF Chapter 3, 4](https://drive.uqu.edu.sa/_/mskhayat/files/MySubjects/2017SS%20Operating%20Systems/Abraham%20Silberschatz-Operating%20System%20Concepts%20(9th,2012_12).pdf)
+- Abraham Silberschatz 외, 『Operating System Concepts』 9판, 3장 · 4장(서적)
 - [Context Switching in Operating System - GeeksforGeeks](https://www.geeksforgeeks.org/operating-systems/context-switch-in-operating-system/)
 - [Thread in Operating System - GeeksforGeeks](https://www.geeksforgeeks.org/operating-systems/thread-in-operating-system/)
 - [Processes and Threads - Computer Science Wiki](https://computersciencewiki.org/index.php/Processes_and_Threads)
@@ -1095,7 +1095,7 @@ spring.threads.virtual.enabled=true
 ## 추가 참고 자료
 
 ### 운영체제 교과서
-- [Operating Systems: Design and Implementation - Tanenbaum & Woodhull (PDF)](https://csc-knu.github.io/sys-prog/books/Andrew%20S.%20Tanenbaum%20-%20Operating%20Systems.%20Design%20and%20Implementation.pdf)
+- Andrew S. Tanenbaum · Albert S. Woodhull, 『Operating Systems: Design and Implementation』(서적)
 - [Operating System Concepts - Silberschatz (Course Materials)](http://www.cs.man.ac.uk/~rizos/CS2051/2003-04/)
 
 ### 온라인 리소스
