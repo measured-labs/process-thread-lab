@@ -5,7 +5,7 @@
 - 질문: 같은 일을 프로세스, 플랫폼 스레드, 가상 스레드로 할 때 생성 비용 · 컨텍스트 스위칭 · 메모리 · 처리량이 실제로 어떻게 다른가. 운영체제 개념(상태 전이, 동기화, 스케줄링, IPC)은 JVM에서 어떻게 보이는가.
 - 상태: **학습 예정 · 실측 없음**. Java 코드는 `java-spring/src/main/java/com/study/` 아래에 대부분 있다(Java 파일 71개 중 57개에 `main` 데모가 있다). 테스트는 2개, Python 쪽은 프로세스 생성 하나와 API 뼈대뿐이다. 실행 결과 기록은 없고, 이 README에도 측정값은 없다.
 - 이 README의 프로젝트 구조 · 실행 명령 · 산출물 목록에는 아직 없는 것이 섞여 있다(`Main.java`, `docs/results/` 등). 목록은 [ADR-000 §6](docs/adr/ADR-000-process-thread-study-scope.md#6-아직-없는-것)에 있다.
-- 설계와 범위는 [ADR-000](docs/adr/ADR-000-process-thread-study-scope.md)에 정리했다. 원래 구현 순서 문서에는 설계안이 두 벌(Java+Python 8단계, Java 7단계) 섞여 있고, 원문은 [docs/archive/IMPLEMENTATION_ORDER.md](docs/archive/IMPLEMENTATION_ORDER.md)에 그대로 있다. 이론 정리는 [THEORY_README.md](THEORY_README.md)에 있다.
+- 설계와 범위는 [ADR-000](docs/adr/ADR-000-process-thread-study-scope.md)에 정리했다. 원래 구현 순서 문서에는 설계안이 두 벌(Java+Python 8단계, Java 7단계) 섞여 있고, 원문은 [docs/archive/IMPLEMENTATION_ORDER.md](docs/archive/IMPLEMENTATION_ORDER.md)에 그대로 있다. 이론 정리는 [docs/theory.md](docs/theory.md)에 있다.
 - 다음 할 일:
   1. 비교 대상(Java만, Java+Python)과 실행 형태(클래스별 `main`, 하나의 CLI)를 정한다.
   2. 코드를 함께 읽으며 단계마다 실제로 돌리고, 명령 · 환경 · 출력을 저장소에 남긴다.
