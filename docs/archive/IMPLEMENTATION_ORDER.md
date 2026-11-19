@@ -1,5 +1,7 @@
 # process_thread 프로젝트 구현 순서 가이드
 
+> 보존 원문(2026-11-18 `docs/archive/`로 옮김). 정리본은 [ADR-000](../adr/ADR-000-process-thread-study-scope.md)이다. 이 파일에는 구현 순서가 두 벌 이어 붙어 있다. 1~8단계 Java+Python 안이 먼저 나오고, "### 목표"부터 시작하는 1~7단계 Java 안이 뒤에 나온다. "예상 소요 시간"은 일정 예상이고 측정값이 아니다. 체크리스트는 모두 미체크다.
+
 ## 개요
 이 문서는 process_thread 프로젝트의 체계적인 구현을 위한 단계별 가이드입니다.
 Java(Spring Boot)와 Python(FastAPI)을 동시에 구현하여 두 언어/프레임워크에서의 프로세스와 스레드 동작을 비교 학습합니다.
